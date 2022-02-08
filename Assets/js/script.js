@@ -1,9 +1,5 @@
  var saveBtn = $(".saveBtn");
 
- /**
-  * FUNCTIONS
-  */
- 
  // current day is displayed at the top of the calendar
  $("#currentDay").text(moment().format('dddd MMMM Do YYYY'));
  
@@ -30,9 +26,9 @@
  // WHEN I click the save button for that time block
  saveBtn.on("click", function() {
  
-     // console.log(this); //save button
+     console.log(this); //save button
      var time = $(this).siblings(".hour").text();
-     var plan = $(this).siblings(".plan").val();
+     var plan = $(this).siblings(".description").val();
  
      // THEN the text for that event is saved in local storage
      localStorage.setItem(time, plan);
@@ -44,11 +40,11 @@
      $(".hour").each(function() {
          var currHour = $(this).text();
          var currPlan = localStorage.getItem(currHour);
- 
-         
- 
+        
+        
+
          if(currPlan !== null) {
-             $(this).siblings(".plan").val(currPlan);
+             $(this).siblings(".description").val(currPlan);
          }
      });
  }
