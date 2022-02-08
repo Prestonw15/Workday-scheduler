@@ -1,10 +1,14 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  Font-Family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
 
-textarea{
+h1 {
+  font-family: 'Varela Round', sans-serif;
+}
+
+textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -21,11 +25,11 @@ textarea{
   border-bottom: 10px solid black;
 }
 
-.description{
+.description {
   white-space: pre-wrap;
 }
 
-.time-block{
+.time-block {
   text-align: center;
   border-radius: 15px;
 }
@@ -39,7 +43,7 @@ textarea{
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px dashed black;
 }
 
 .past {
@@ -58,7 +62,7 @@ textarea{
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06AED5;
